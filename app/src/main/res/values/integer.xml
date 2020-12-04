@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="timeAlpha">1750</integer>
+    <integer name="timeTranslate">1250</integer>
+</resources>

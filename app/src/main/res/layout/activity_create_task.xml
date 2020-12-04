@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    tools:context=".Activity.CreateTaskActivity">
+
+    <ImageButton
+        android:id="@+id/create_task_activity_back"
+        style="@style/BackButtonStyle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/create_task_activity_info_title"
+        style="@style/TitleText"
+        android:text="@string/create_new_task"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_task_activity_back" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/layout_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_task_activity_info_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:id="@+id/create_task_activity_title_tip"
+                style="@style/TipText"
+                android:text="@string/title" />
+
+            <EditText
+                android:id="@+id/create_task_activity_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/enter_a_info"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/create_task_activity_description_tip"
+                style="@style/TipText"
+                android:text="@string/description" />
+
+            <EditText
+                android:id="@+id/create_task_activity_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/enter_a_description"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/create_task_activity_deadline_tip"
+                style="@style/TipText"
+                android:text="@string/deadline" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/create_task_activity_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/create_task_activity_date_text"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:textAlignment="gravity"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/create_task_activity_date_button"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/create_task_activity_date_button"
+                    style="@style/DeadlineButtonStyle"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/create_task_activity_priority_tip"
+                style="@style/TipText"
+                android:text="@string/priority" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/create_task_activity_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/create_task_activity_priority_high"
+                        style="@style/PriorityText"
+                        android:background="@drawable/text_high"
+                        android:text="@string/high" />
+
+                    <TextView
+                        android:id="@+id/create_task_activity_priority_medium"
+                        style="@style/PriorityText"
+                        android:background="@drawable/text_medium"
+                        android:text="@string/medium" />
+
+                    <TextView
+                        android:id="@+id/create_task_activity_priority_low"
+                        style="@style/PriorityText"
+                        android:background="@drawable/text_low"
+                        android:text="@string/low" />
+
+                    <TextView
+                        android:id="@+id/create_task_activity_priority_none"
+                        style="@style/PriorityText"
+                        android:background="@drawable/text_none_select"
+                        android:text="@string/none"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/create_task_activity_group_tip"
+                style="@style/TipText"
+                android:text="@string/group" />
+
+            <Spinner
+                android:id="@+id/create_task_activity_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" />
+
+
+            <TextView
+                android:id="@+id/create_task_activity_notification_tip"
+                style="@style/TipText"
+                android:text="@string/notification" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/create_task_activity_notification_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/enable_notification"
+                    android:textAlignment="gravity"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/create_task_activity_notification"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/create_task_activity_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/create_task_activity_create"
+                style="@style/UpdateButton"
+                android:onClick="createTask"
+                android:text="@string/create_a_task" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

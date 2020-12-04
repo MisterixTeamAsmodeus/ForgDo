@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorTextPriorityHigh">#FFCFCF</color>
+    <color name="colorTextPriorityHighSelect">#C8A2A2</color>
+
+    <color name="colorTextPriorityMedium">#FFDFCF</color>
+    <color name="colorTextPriorityMediumSelect">#C8AFA2</color>
+
+    <color name="colorTextPriorityLow">#CFFFE1</color>
+    <color name="colorTextPriorityLowSelect">#A2C8B0</color>
+
+    <color name="colorTextPriorityNone">#E1E1E1</color>
+    <color name="colorTextPriorityNoneSelect">#C8C8C8</color>
+
+    <color name="colorPrimaryDefault">#1565c0</color>
+    <color name="colorPrimaryDarkDefault">#003c8f</color>
+    <color name="colorAccentDefault">#D77118</color>
+    <color name="colorAccentNotCheckDefault">#40D77118</color>
+    <color name="colorRippleDefault">#C83416</color>
+    <color name="colorTextDefault">#FFFFFF</color>
+    <color name="colorTextAccentDefault">#000000</color>
+
+    <color name="colorPrimaryAmber">#C87C1B</color>
+    <color name="colorPrimaryDarkAmber">#c56000</color>
+    <color name="colorAccentAmber">#1B89C8</color>
+    <color name="colorAccentNotCheckAmber">#401B89C8</color>
+    <color name="colorRippleAmber">#0EF0D2</color>
+    <color name="colorTextAmber">#000000</color>
+    <color name="colorTextAccentAmber">#000000</color>
+
+    <color name="colorPrimaryTeal">#00897b</color>
+    <color name="colorPrimaryDarkTeal">#005b4f</color>
+    <color name="colorAccentTeal">#892C00</color>
+    <color name="colorAccentNotCheckTeal">#40892C00</color>
+    <color name="colorRippleTeal">#C7A600</color>
+    <color name="colorTextTeal">#000000</color>
+    <color name="colorTextAccentTeal">#FFFFFF</color>
+
+    <color name="colorPrimaryDark">#455a64</color>
+    <color name="colorPrimaryDarkDark">#1c313a</color>
+    <color name="colorAccentDark">#AF746A</color>
+    <color name="colorAccentNotCheckDark">#40AF746A</color>
+    <color name="colorRippleDark">#645645</color>
+    <color name="colorTextDark">#FFFFFF</color>
+    <color name="colorTextAccentDark">#000000</color>
+
+    <color name="colorPrimaryBrown">#5d4037</color>
+    <color name="colorPrimaryDarkBrown">#321911</color>
+    <color name="colorAccentBrown">#4D8274</color>
+    <color name="colorAccentNotCheckBrown">#404D8274</color>
+    <color name="colorRippleBrown">#38838E</color>
+    <color name="colorTextBrown">#FFFFFF</color>
+    <color name="colorTextAccentBrown">#FFFFFF</color>
+
+    <color name="colorPrimaryPurple">#8e24aa</color>
+    <color name="colorPrimaryDarkPurple">#5c007a</color>
+    <color name="colorAccentPurple">#63AA24</color>
+    <color name="colorAccentNotCheckPurple">#4063AA24</color>
+    <color name="colorRipplePurple">#CDCA18</color>
+    <color name="colorTextPurple">#FFFFFF</color>
+    <color name="colorTextAccentPurple">#000000</color>
+</resources>

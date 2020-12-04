@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SelectAvatarActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_background">
+
+        <ImageButton
+            android:id="@+id/select_avatar_activity_back"
+            style="@style/BackButtonStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/select_avatar_activity_title"
+            android:text="@string/select_your_avatar"
+            style="@style/TitleText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_avatar_activity_back" />
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/layout_background"
+            android:scrollbars="none"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/select_avatar_activity_title">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/select_avatar_activity_man_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/man_s_avatar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/select_avatar_activity_man_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/select_avatar_activity_man_tip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_1"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_1" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_1_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_3"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_3" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_3_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_4"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_4" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_4_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_6"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_6" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_6_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_8"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_8" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_8_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_10"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_10" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_10_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_11"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_11" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_11_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_13"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_13" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_13_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_14"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_14" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_14_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_15"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_15" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_15_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_16"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_16" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_16_check"
+                                style="@style/CheckLayoutStyle"
+                                android:onClick="onAvatarSelect" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_17"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_17" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_17_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_18"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_18" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_18_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_19"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_19" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_19_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_20"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_20" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_20_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_23"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_23" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_23_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_27"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_27" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_27_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_28"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_28" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_28_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/select_avatar_activity_girl_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/girl_s_avatar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/select_avatar_activity_man_layout" />
+
+                <LinearLayout
+                    android:id="@+id/select_avatar_activity_girl_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/select_avatar_activity_girl_tip">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_2"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_2" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_2_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_5"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_5" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_5_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_7"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_7" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_7_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_9"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_9" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_9_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_12"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_12" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_12_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_21"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_21" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_21_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_22"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_22" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_22_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_24"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_24" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_24_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_25"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_25" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_25_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout style="@style/AvatarLayoutStyle">
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_26"
+                                style="@style/AvatarStyle"
+                                android:onClick="onAvatarSelect"
+                                android:src="@drawable/ic_avatar_26" />
+
+                            <ImageView
+                                android:id="@+id/select_avatar_activity_avatar_26_check"
+                                style="@style/CheckLayoutStyle" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

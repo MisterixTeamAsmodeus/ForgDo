@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "682194022275",
+    "firebase_url": "https://forgdo-81420.firebaseio.com",
+    "project_id": "forgdo-81420",
+    "storage_bucket": "forgdo-81420.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682194022275:android:91c9f23ac69b2e8de250b6",
+        "android_client_info": {
+          "package_name": "com.itschool.buzuverov.forgdo20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682194022275-rfjsh0qrperl86smk77hl7jahpn7b53q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9jh-XwyjK4lFaCYpCpanhNFn26ISY0Ec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682194022275-rfjsh0qrperl86smk77hl7jahpn7b53q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

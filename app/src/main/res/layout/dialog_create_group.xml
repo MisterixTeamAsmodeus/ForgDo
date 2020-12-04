@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/group_info_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="@android:color/transparent"
+        android:hint="@string/group_name"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLines="5"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/group_info_name"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="5dp">
+
+        <Button
+            android:id="@+id/group_dialog_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="?attr/colorAccent"
+            android:text="@string/create"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorTextAccent" />
+
+        <Button
+            android:id="@+id/group_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_toStartOf="@id/group_dialog_accept"
+            android:backgroundTint="?attr/colorAccent"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorTextAccent" />
+
+    </RelativeLayout>
+</RelativeLayout>
