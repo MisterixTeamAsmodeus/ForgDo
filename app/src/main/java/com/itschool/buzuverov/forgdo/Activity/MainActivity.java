@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private static int selectIconIndex = 0;
     private ImageButton[] iconMenuButtons;
     private TypedValue value;
-    private FragmentManager manager = getSupportFragmentManager();
+    private final FragmentManager manager = getSupportFragmentManager();
     private FragmentTransaction transaction;
 
     @Override
